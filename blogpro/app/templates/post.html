@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h4>Post your thoughts here</h4>
+<form method="post" action="{{ url_for('post_store')}}">
+<div align="center">
+<p> Title </p>
+<input type="text" name="name" style="width: 250px"><br>
+<textarea name="blogpost" cols="45" rows="15">
+</textarea><br>
+<input type="submit" value="Submit" />
+</div>
+</form>
+{% endblock %} 
